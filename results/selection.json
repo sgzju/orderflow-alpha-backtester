@@ -1,0 +1,30 @@
+{
+ "chosen": {
+  "taker": {
+   "style": "taker",
+   "theta": 0.75,
+   "horizon_s": 30,
+   "lat_ms": 10
+  },
+  "maker": {
+   "style": "maker",
+   "theta": 0.2,
+   "horizon_s": 2,
+   "lat_ms": 10,
+   "max_hold_s": 120,
+   "stop_ticks": 4.0
+  }
+ },
+ "timing": {
+  "serial_s": 10.313902899622917,
+  "parallel_s": 9.473851500079036,
+  "runs": 468,
+  "workers": 18,
+  "speedup": 1.0886705263996246,
+  "events_per_run": 4025047,
+  "maker_run_s": 0.02727415501140058,
+  "events_per_s": 147577330.93170193,
+  "full_sweep_runs": 936,
+  "full_sweep_s": 17.300586699973792
+ }
+}

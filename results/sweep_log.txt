@@ -1,0 +1,15 @@
+﻿benchmark: 468 runs, serial 10.3s, 18 workers 9.5s, speedup 1.1x
+maker replay: 4,025,047 events in 27 ms (148M events/s, one core)
+validation sweep: 936 runs in 17.3s
+selected on validation: {'taker': {'style': 'taker', 'theta': 0.75, 'horizon_s': 30, 'lat_ms': 10}, 'maker': {'style': 'maker', 'theta': 0.2, 'horizon_s': 2, 'lat_ms': 10, 'max_hold_s': 120, 'stop_ticks': 4.0}}
+                          trades  gross_bp  net_bp  pnl_usd
+style variant     lat_ms                                   
+maker latency     1          321    -1.618  -6.893 -115.451
+                  10         326    -1.554  -6.914 -119.471
+                  50         344    -1.681  -7.325 -134.770
+                  100        356    -1.739  -7.556 -144.698
+                  200        374    -1.755  -7.785 -156.340
+                  500        436    -1.983  -8.239 -196.683
+      random sign 10        2155    -1.952  -8.257 -923.129
+      selected    10         326    -1.554  -6.914 -119.471
+taker selected    10         815    -0.559 -10.559 -448.637
